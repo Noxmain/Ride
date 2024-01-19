@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>The Ride</title>
+  <style>
+    body {text-align: center; background-color: #F5F5F5;}
+    canvas {border: 2px solid #191919; border-radius: 3px;}
+    @media (prefers-color-scheme: dark) {
+      body {background-color: #191919;}
+      canvas {border-color: #F5F5F5;}
+    }
+  </style>
+  <script>
+    bcolor = [245, 245, 245]; fcolor = [25, 25, 25];
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {[bcolor, fcolor] = [fcolor, bcolor];});
+  </script>
+  <script src="p5.js"></script>
+  <!-- <script src="../addons/p5.sound.js"></script> -->
+  <!-- <script src="functions.js"></script> -->
+  <!-- <script src="geometry.js"></script> -->
+  <!-- <script src="color.js"></script> -->
+  <script src="sketch.js"></script>
+</head>
+<body>
+  <main>
+  </main>
+</body>
+</html>
