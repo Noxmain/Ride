@@ -1,8 +1,3 @@
-let planet_chance = 1 / 100;
-let ufo_chance = 1 / 600;
-let item_chance = 1 / 1000;
-
-let elements = [];
 function planets() {return elements.filter(x => x.t == "planet");}
 function ufos() {return elements.filter(x => x.t == "ufo");}
 function items() {return elements.filter(x => x.t == "item");}
@@ -50,7 +45,8 @@ function Ufo(x, y) {
     this.img = img.ufo;
 }
 
-function Item(x, t) {
+function Item(x, e) {
     Element.call(this, "item", x, -10, 10);
-    this.img = img[t]
+    this.img = img[e];
+    this.e = e;
 }
